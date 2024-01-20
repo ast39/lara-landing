@@ -30,7 +30,7 @@ return [
     */
     'bots'                         => [
         'mybot' => [
-            'token'               => env('TELEGRAM_BOT_TOKEN', '2146575799:AAFiYjCObaJpI5TZsCEUqVZu2CmKuJ__hCs'),
+            'token'               => env('TELEGRAM_BOT_TOKEN', 'YOUR-TELEGRAM-BOT-TOKEN'),
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [
@@ -52,7 +52,7 @@ return [
     | your default bot for regular use.
     |
     */
-    'default'                      => 'mybot',
+    'default'                      => env('TELEGRAM_DEFAULT_BOT','YOUR-TELEGRAM-DEFAULT-BOT'),
 
     /*
     |--------------------------------------------------------------------------
